@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function show(){
+        document.getElementById('thi').style.display = "block";
+    }
+    function hide(){
+        document.getElementById("thi").style.display = "none";
+    }
+    function better(){
+        if(document.getElementById("thi").style.display == "none"){
+            document.getElementById('thi').style.display = "block";
+        }
+        else{
+            document.getElementById('thi').style.display = "none";
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="pho" class="big">
+        <img src="https://i.pinimg.com/originals/cd/b4/89/cdb489d00bd241178db64ca841d0a432.jpg" id="thi" />
+    </div>
+        <button onclick="show()" >show</button>
+        <button onclick="hide()" >hide</button>
+        <button onclick="better()">smart</button>
+
+</body>
+</html>
